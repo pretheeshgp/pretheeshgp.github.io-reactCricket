@@ -1,0 +1,40 @@
+body {
+
+
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+.ground{
+
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100vh;
+	font-weight: 100;
+}
+
+
+.battingSide{
+
+	display: grid;
+	grid-column: 1/2;
+	color:#000;
+	background-color: #fff;
+	justify-content: center;
+	align-content: center;
+}
+
+
+.bowlingSide {
+
+	display: grid;
+	grid-column: 2/-1;
+	color: #fff;
+	background-color: #000;
+	justify-content: center;
+	align-content: center;
+
+}

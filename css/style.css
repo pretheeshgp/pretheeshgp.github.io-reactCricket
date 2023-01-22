@@ -1,0 +1,376 @@
+body {
+
+
+font-family: 'Iceland', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+
+.ground{
+
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100vh;
+	font-weight: 100;
+}
+
+
+.battingSide{
+
+	display: flex;
+	grid-column: 1/2;
+	color:#000;
+	background-color: #fff;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+
+.team {
+
+
+	display: grid;
+	width: 95%;
+	height: 5vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 5vh;
+	justify-items: center;
+	align-items: center;
+
+
+}
+
+
+.bigScoreCard {
+
+	display: grid;
+	height: 10vh;
+	width: 95%;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 10vh;
+
+	align-items: center;
+	justify-items: center;
+
+}
+
+
+.bsc {
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	justify-items: center;
+}
+
+.text {
+
+	height: 30%;
+}
+
+
+.number {
+
+	height: 70%;
+	font-size: 3vw;
+	font-weight: 900;
+	color: red;	
+}
+
+
+
+
+.battingPartners {
+
+
+	display: flex;
+	width: 95%;
+	height: 20vh;
+
+	flex-direction: column;
+	justify-items: center;
+
+}
+
+.bp {
+
+
+	display: grid;
+	grid-template-columns: 20% 60% 10% 10%;
+	grid-template-rows: 10vh;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.runbyrun {
+
+	border: none;
+	border-bottom: solid 1px;
+	font-weight: 900 !important;
+	overflow: hidden;
+}
+
+.runbyrun:hover {
+  overflow-x: scroll;
+}
+
+
+.scoreBoard{
+
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 50vh;
+	width: 95%;
+}
+
+.sb {
+
+
+
+
+
+}
+
+.currentRuns{
+
+
+
+	width: 45%;
+	height: 50vh;
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 25vh 25vh;
+
+
+
+	justify-items: center;
+	align-items: center;
+
+}
+
+
+#nowruns {
+
+			grid-column: 1/-1;
+			display: grid;
+			justify-content: center;
+			align-content: center;
+			color: red;
+			font-size: 10vw;
+
+}
+
+
+#inn {
+
+
+			grid-column: 1/2;
+			display: grid;
+			justify-content: center;
+			align-content: center;
+
+			font-size: 2.3vw;
+    		font-weight: 900;
+
+}
+
+#tar {
+
+
+			grid-column: 2/-1;
+			display: grid;
+			justify-content: center;
+			align-content: center;
+			font-size: 2.3vw;
+    		font-weight: 900;
+    		color: red;
+}
+
+.allBatsmen{
+
+	width: 45%;
+	height: 50vh;
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: space-between;
+
+	overflow-y: scroll;
+}
+
+
+.allBatsmenRow{
+
+
+		display: grid;
+		height: 15%;
+		grid-template-columns: 60% 20% 20%;
+		grid-template-rows: 1fr;
+		justify-items: center;
+		align-items: center;
+}
+
+
+.bowlingSide {
+
+	display: flex;
+	grid-column: 2/-1;
+	color: #fff;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #000;
+}
+
+
+
+.bs {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+}
+
+.renderdiv {
+
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 45%;
+	justify-content: center;
+    align-items: center;
+}
+
+.clicktoball {
+
+    cursor: pointer;
+    background-color: red;
+    text-decoration: line-through;
+    text-decoration-style: dashed;
+    text-decoration-color: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 6vw;
+    height: 100%;
+    width: 50%;
+    color: #000;
+
+}
+
+.clicktorestart {
+
+    cursor: pointer;
+    background-color: red;
+    display: grid;
+    justify-content: center;
+    
+    align-items: center;
+    border-radius: 100%;
+    font-size: 4vw;
+    height: 100%;
+    width: 50%;
+    color: #000;
+
+}
+
+
+.currentbowler {
+
+	height: 10%;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.ball {
+
+    height: 60%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 100%;
+}
+
+
+#bowler {
+
+
+		width: auto;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+}
+
+.bowlingcard {
+
+	height: 45%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,16.3333%);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.ballcounter {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50% 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#balls {
+
+
+	grid-column: span 1;
+
+}
+
+
+.col {
+
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+
+
+#bottomDisplay {
+
+
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    font-size: 5vw;
+
+
+}

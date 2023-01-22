@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>React[RC]Cricket</title>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Electrolize|Iceland" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/jquery.ui.css">
+  	<link href="alert/css/alert.css" rel="stylesheet" />
+		<link href="alert/themes/default/theme.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+
+<div class="ground">
+	
+<!-- flexParent 1 . childOfGroundGrid -->
+	<div class="battingSide">
+		
+
+<!--flexChildItem 1 -->
+		<div class="team">
+			
+
+			<div class="teamName">INDIA</div>
+			<div class="side">BATTING</div>
+
+
+		</div>
+
+<!-- flexChildItem 2 -->
+		<div class="bigScoreCard">
+			
+
+			<div class="bsc runs">
+				
+				<div class="text">TOT.RUNS</div>
+				<div id="totalruns" class="number">0</div>
+
+
+			</div>
+
+
+			<div class="bsc overs">
+				
+				<div class="text">TOT.OVERS</div>
+				<div id="overs" class="number">0</div>
+
+
+			</div>
+
+
+
+			<div class="bsc wickets">
+				
+				<div class="text">TOT.WKTS</div>
+				<div id="wkt" class="number">0</div>
+
+
+			</div>						
+
+
+		</div>
+
+
+
+<!--flexChildItem 3 -->
+
+		<div class="battingPartners">
+			
+
+			<div id="batsmen1" class="batsmen1 bp">
+		
+				<div id="allbat0" class="batsmenName bbp">G.Gambhir</div>
+				<div id="batsman0" class="runbyrun bbp">0</div>
+				<div id="myruns0" class="myruns bbp number">0*</div>
+				<div class="myballs bbp number">0</div>
+
+			</div>
+
+
+			<div id="batsmen2" class="batsmen2 bp">
+		
+				<div id="allbat1" class="batsmenName bbp">Sehwag</div>
+				<div id="batsman1" class="runbyrun bbp">0</div>
+				<div id="myruns1" class="myruns bbp number">0*</div>
+				<div class="myballs bbp number">0</div>
+
+			</div>			
+
+
+
+		</div>
+
+
+<!--flexChildItem 4 -->
+
+		<div class="scoreBoard">
+			
+
+			<div id="currentruns" class="currentRuns sb">
+
+
+								<div id="nowruns" class="number">0</div>
+								<div id="inn">Innings: 1</div>
+								<div id="tar">Target: -</div>
+
+
+
+			</div>
+
+			<div class="allBatsmen sb">
+				
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+
+
+	<div id="bowlingSide" class="bowlingSide">
+		
+		<div class="currentbowler">
+
+
+			<div id="bowler"></div> 
+
+			<div class="ball" id="ball1"></div>
+			<div class="ball" id="ball2"></div>
+			<div class="ball" id="ball3"></div>
+			<div class="ball" id="ball4"></div>
+			<div class="ball" id="ball5"></div>
+			<div class="ball" id="ball6"></div>
+
+
+
+		</div>
+
+
+
+		<div id="renderdiv" class="renderdiv">
+
+			<div class="clicktoball bs">clickToball</div>
+
+		</div>
+
+		<div class="bowlingcard">
+			
+			<div class="col" id="bc">bowler</div>
+			<div class="col" id="bc">overs</div>
+			<div class="col" id="bc">runs</div>
+			<div class="col" id="bc">wickets</div>
+
+														
+
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+<div id="bottomDisplay">
+	
+
+
+Innings Over <br/>
+
+Total Runs : 200  <br/>
+
+Wickets: 10  <br/>
+
+Overs: <br/>
+
+
+Target: 201 <br/>
+
+<a href="#">Click to Continue</a>
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	
+
+function swapteams(){
+
+
+document.getElementById('renderdiv').innerHTML='<div class="clicktoball bs">clickToball</div>';
+
+
+$('.number').html(0);
+$('.ball').html('');
+$('.runbyrun').html(0);
+
+
+}
+
+
+function startgame(){
+
+
+
+$('.ground').show();
+$('#bottomDisplay').hide();
+$('.runbyrun').html(0);
+
+
+}
+
+
+$(document).ready(function(){
+
+
+						$('#bottomDisplay').hide();
+
+let inning1 = ["G.Gambir","Sehwag","Sachin","M.Dhoni","Y.Singh","Robin.S","R.Jadeja","Kumble","B.Kumar","J.Bumrah","Prasad"];
+
+						let batLoop = '';
+
+						for(let i=1;i<12;i++){
+
+										let j = i-1;
+
+										batLoop+='<div class="allBatsmenRow abs">'+
+									
+														'<div class="allbatsmenName'+i+' all">'+inning1[j]+'</div>'+
+														'<div id="totalbatter'+i+'" class="number allmyruns all">0*</div>'+
+														'<div class="number allmyballs all">0</div>'+
+
+												'</div>';
+						}
+
+
+						$('.allBatsmen').html(batLoop);
+
+
+let bowlingLoop1 =  ["C.Vaas","G.Mcgrath","S.Pollock", "J.Kallis", "M.Muralitharan","S.Afridi","S.Jayasurya"];
+
+
+
+let ballLoop ='';
+
+			for(let i=0;i<bowlingLoop1.length;i++){
+						
+						ballLoop += '<div id="bc">'+bowlingLoop1[i]+'</div><div id="bc_over_'+i+'">0</div><div id="bc_runs_'+i+'">0</div><div id="bc_wickets_'+i+'">0</div>';
+			}
+
+
+			let bowlingDiv = $('.bowlingcard').html();
+			$('.bowlingcard').html(bowlingDiv+ballLoop);
+
+});
+
+
+</script>
+
+
+<!-- script src js external files for react (2) -->
+<script	src="https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0-alpha.2/umd/react.development.js"	crossorigin	></script>
+<script	src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0-alpha.2/umd/react-dom.production.min.js" crossorigin></script>	
+
+<!-- script babel js for jsx -->
+<script	src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script src="js/app.js" type="text/babel"></script>
+
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	  <script src="js/jquery-1.12.4.js"></script>
+  		<script src="js/jquery.ui.js"></script>
+			<script src="alert/js/alert.js"></script>
+
+
+</body>
+</html>
