@@ -16,7 +16,7 @@ font-family: 'Iceland', cursive;
 	font-weight: 100;
 }
 
-
+/*
 .battingSide{
 
 	display: flex;
@@ -28,6 +28,7 @@ font-family: 'Iceland', cursive;
 	justify-content: space-around;
 
 }
+*/
 
 
 .team {
@@ -223,7 +224,7 @@ font-family: 'Iceland', cursive;
 		align-items: center;
 }
 
-
+/*
 .bowlingSide {
 
 	display: flex;
@@ -232,6 +233,32 @@ font-family: 'Iceland', cursive;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #000;
+} */
+
+.battingSide{
+
+	display: grid;
+	grid-column: 1/2;
+	color:#000;
+	background-color: #fff;
+	justify-content: center;
+	align-content: center;
+	background-image: url('https://pbs.twimg.com/media/BqrIM3tCIAAo-Uz.jpg:large');
+        background-size: cover;
+}
+
+
+.bowlingSide {
+
+	display: grid;
+	grid-column: 2/-1;
+	color: #fff;
+	background-color: #000;
+	justify-content: center;
+	align-content: center;
+	background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1571801366823-ae2ea851a3de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80');
+
 }
 
 
@@ -269,7 +296,8 @@ font-family: 'Iceland', cursive;
     font-size: 6vw;
     height: 100%;
     width: 50%;
-    color: #000;
+    color: #000; 
+    opacity: 0.65;
 
 }
 
