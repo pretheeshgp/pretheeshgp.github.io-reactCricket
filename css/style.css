@@ -1,9 +1,16 @@
 body {
 
 
-font-family: 'Iceland', cursive;
-	margin: 0;
+ 	font-family: 'Roboto Mono', monospace;
+ 	margin: 0;
 	padding: 0;
+}
+
+
+audio {
+
+
+		display: none;
 }
 
 
@@ -14,21 +21,22 @@ font-family: 'Iceland', cursive;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 100vh;
 	font-weight: 100;
+	background-image: url('file:///C:/deepWork/Coding/pingu-works/_CodingWorks/02_Backend_Projects/reactCricket/g1.jpg');
+	background-size: cover;
 }
 
-/*
+
 .battingSide{
 
 	display: flex;
 	grid-column: 1/2;
 	color:#000;
-	background-color: #fff;
+/*	background-color: #fff; */
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 
 }
-*/
 
 
 .team {
@@ -133,7 +141,11 @@ font-family: 'Iceland', cursive;
 	justify-content: space-around;
 	height: 50vh;
 	width: 95%;
-}
+
+    background-image: url('file:///C:/deepWork/Coding/pingu-works/_CodingWorks/02_Backend_Projects/reactCricket/bt1.png');
+    background-size: cover;
+
+    }
 
 .sb {
 
@@ -224,7 +236,7 @@ font-family: 'Iceland', cursive;
 		align-items: center;
 }
 
-/*
+
 .bowlingSide {
 
 	display: flex;
@@ -232,33 +244,7 @@ font-family: 'Iceland', cursive;
 	color: #fff;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #000;
-} */
-
-.battingSide{
-
-	display: grid;
-	grid-column: 1/2;
-	color:#000;
-	background-color: #fff;
-	justify-content: center;
-	align-content: center;
-	background-image: url('https://pbs.twimg.com/media/BqrIM3tCIAAo-Uz.jpg:large');
-        background-size: cover;
-}
-
-
-.bowlingSide {
-
-	display: grid;
-	grid-column: 2/-1;
-	color: #fff;
-	background-color: #000;
-	justify-content: center;
-	align-content: center;
-	background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1571801366823-ae2ea851a3de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80');
-
+	/* background-color: #000; */
 }
 
 
@@ -285,7 +271,8 @@ font-family: 'Iceland', cursive;
 .clicktoball {
 
     cursor: pointer;
-    background-color: red;
+    background-image: url('file:///C:/deepWork/Coding/pingu-works/_CodingWorks/02_Backend_Projects/reactCricket/b1.png');
+    background-size: cover;
     text-decoration: line-through;
     text-decoration-style: dashed;
     text-decoration-color: #fff;
@@ -295,9 +282,8 @@ font-family: 'Iceland', cursive;
     border-radius: 100%;
     font-size: 6vw;
     height: 100%;
-    width: 50%;
-    color: #000; 
-    opacity: 0.65;
+    width: 45%;
+    color: #ffffff;
 
 }
 
