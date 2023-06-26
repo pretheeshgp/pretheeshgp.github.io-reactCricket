@@ -711,9 +711,8 @@ else {
 
 					let totalscore = document.getElementById('batsman'+bat).innerHTML.split(',');
 
-					document.getElementById('allbat'+bat).style.textDecoration='underline';
+					document.getElementById('allbat'+bat).style.textDecoration='underline 6px red';
 
-					document.getElementById('allbat'+bat).style.textDecorationColor='red';
 
 					let batNot = Number(1) - Number(bat);
 
