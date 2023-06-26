@@ -806,7 +806,7 @@ render(){
 
 
 //<div class="ballcounter"><div id="bb">{this.state.balls} balls</div><div id="balls">overs {this.state.overs}</div></div>		
-		return (<div onClick={this.ballClick} class="clicktoball">clickToball</div>);
+		return (<div onClick={this.ballClick} class="clicktoball">ClickToBall</div>);
 
 }
 
