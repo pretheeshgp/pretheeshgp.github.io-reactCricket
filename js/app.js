@@ -31,6 +31,9 @@ this.state = {pair: [0,0], position: [1,2], batOrder: [inning1,inning2], bowlOrd
 this.ballClick = this.ballClick.bind(this);
 this.sweepShot = this.sweepShot.bind(this);
 
+
+
+
 }
 
 
@@ -707,6 +710,16 @@ else {
 					document.getElementById('batsman'+bat).innerHTML += batsman;
 
 					let totalscore = document.getElementById('batsman'+bat).innerHTML.split(',');
+
+					document.getElementById('allbat'+bat).style.textDecoration='underline';
+
+					document.getElementById('allbat'+bat).style.textDecorationColor='red';
+
+					let batNot = Number(1) - Number(bat);
+
+
+					document.getElementById('allbat'+bat).style.textDecoration='none';
+
 
 					let bingo = [0,0];
 
