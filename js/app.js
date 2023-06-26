@@ -718,7 +718,7 @@ else {
 					let batNot = Number(1) - Number(bat);
 
 
-					document.getElementById('allbat'+bat).style.textDecoration='none';
+					document.getElementById('allbat'+batNot).style.textDecoration='none';
 
 
 					let bingo = [0,0];
