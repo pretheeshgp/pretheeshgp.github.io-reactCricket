@@ -1,7 +1,7 @@
 body {
 
 
- 	font-family: 'Roboto Mono', monospace;
+	font-family: 'VT323', monospace;
  	margin: 0;
 	padding: 0;
 }
@@ -21,8 +21,12 @@ audio {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 100vh;
 	font-weight: 100;
-	background-image: url('file:///C:/deepWork/Coding/pingu-works/_CodingWorks/02_Backend_Projects/reactCricket/g1.jpg');
+	background-color: #000000;
+	color: #00FF01 !important;
+/*	background-image: url('../g1.jpg');
 	background-size: cover;
+
+*/
 }
 
 
@@ -30,7 +34,6 @@ audio {
 
 	display: flex;
 	grid-column: 1/2;
-	color:#000;
 /*	background-color: #fff; */
 	flex-direction: column;
 	align-items: center;
@@ -90,7 +93,7 @@ audio {
 	height: 70%;
 	font-size: 3vw;
 	font-weight: 900;
-	color: red;	
+	color: #00FF01;	
 }
 
 
@@ -142,8 +145,6 @@ audio {
 	height: 50vh;
 	width: 95%;
 
-    background-image: url('file:///C:/deepWork/Coding/pingu-works/_CodingWorks/02_Backend_Projects/reactCricket/bt1.png');
-    background-size: cover;
 
     }
 
@@ -171,6 +172,9 @@ audio {
 	justify-items: center;
 	align-items: center;
 
+	background-image: url('../bat.png');
+	background-size: cover;
+
 }
 
 
@@ -180,7 +184,7 @@ audio {
 			display: grid;
 			justify-content: center;
 			align-content: center;
-			color: red;
+			color: #ffffff;
 			font-size: 10vw;
 
 }
@@ -196,6 +200,7 @@ audio {
 
 			font-size: 2.3vw;
     		font-weight: 900;
+    		color: #ffffff !important;
 
 }
 
@@ -208,7 +213,7 @@ audio {
 			align-content: center;
 			font-size: 2.3vw;
     		font-weight: 900;
-    		color: red;
+    		color: #ffffff !important;
 }
 
 .allBatsmen{
@@ -241,7 +246,6 @@ audio {
 
 	display: flex;
 	grid-column: 2/-1;
-	color: #fff;
 	flex-direction: column;
 	justify-content: space-between;
 	/* background-color: #000; */
@@ -271,7 +275,7 @@ audio {
 .clicktoball {
 
     cursor: pointer;
-    background-image: url('file:///C:/deepWork/Coding/pingu-works/_CodingWorks/02_Backend_Projects/reactCricket/b1.png');
+    background-image: url('../ball.png');
     background-size: cover;
     text-decoration: line-through;
     text-decoration-style: dashed;
@@ -290,7 +294,7 @@ audio {
 .clicktorestart {
 
     cursor: pointer;
-    background-color: red;
+    background-color: #00FF01;
     display: grid;
     justify-content: center;
     
@@ -299,7 +303,6 @@ audio {
     font-size: 4vw;
     height: 100%;
     width: 50%;
-    color: #000;
 
 }
 
@@ -323,8 +326,10 @@ audio {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #00FF01;
     border-radius: 100%;
+    color: #000000;
+    font-weight: 900;
 }
 
 
@@ -371,7 +376,7 @@ audio {
 .col {
 
 	text-decoration: underline;
-	text-decoration-color: red;
+	text-decoration-color: #00FF01;
 }
 
 
