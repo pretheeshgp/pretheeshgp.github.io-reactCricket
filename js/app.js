@@ -711,7 +711,7 @@ else {
 
 					let totalscore = document.getElementById('batsman'+bat).innerHTML.split(',');
 
-					document.getElementById('allbat'+bat).style.textDecoration='underline 6px red';
+					document.getElementById('allbat'+bat).style.textDecoration='underline 6px #00FF01';
 
 
 					let batNot = Number(1) - Number(bat);
@@ -806,7 +806,7 @@ render(){
 
 
 //<div class="ballcounter"><div id="bb">{this.state.balls} balls</div><div id="balls">overs {this.state.overs}</div></div>		
-		return (<div onClick={this.ballClick} class="clicktoball">ClickToBall</div>);
+		return (<div onClick={this.ballClick} class="clicktoball"></div>);
 
 }
 
